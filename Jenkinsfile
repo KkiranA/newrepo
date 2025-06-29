@@ -16,7 +16,7 @@ pipeline {
       steps {
         sh 'df -PhT'
 
-        echo 'Step 1: Building the application...'
+        echo "Step 1: Building the application: ${APP_NAME}"
 
       }
 
@@ -26,7 +26,7 @@ pipeline {
 
       steps {
 
-        echo 'Step 2: Running tests...'
+       echo "Step 2: Running tests for ${APP_NAME}..."
 
       }
 
@@ -36,7 +36,7 @@ pipeline {
 
       steps {
 
-        echo 'Step 3: Deploying to staging...'
+        echo "Step 3: Deploying ${APP_NAME} to ${DEPLOY_ENV}..."
 
       }
 
