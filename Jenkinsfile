@@ -8,7 +8,7 @@ pipeline {
     stage('Build') {
 
       steps {
-        sh df -PhT
+        sh 'df -PhT'
 
         echo 'Step 1: Building the application...'
 
