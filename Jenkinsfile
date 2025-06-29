@@ -5,6 +5,7 @@ pipeline {
    environment {
     APP_NAME = 'MyApp'
     DEPLOY_ENV = 'staging'
+   }
   
 
 
